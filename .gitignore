@@ -1,0 +1,5 @@
+*.bak
+
+# Ignore all datasets except for debug2D
+datasets/*
+!datasets/debug2D/

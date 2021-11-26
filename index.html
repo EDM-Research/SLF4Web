@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- <canvas id='canvas' width='1000' height='500'></canvas> -->
+
+  <!-- <div id='container' ></div> -->
+  <!-- <script type="module" src='https://cdn.skypack.dev/three@0.131.3'></script> -->
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/mpd-parser@0.18.0/dist/mpd-parser.cjs.min.js"></script> -->
+  <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+  <!-- <script type='module' src='https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js' defer></script> -->
+  <script src="./mp4box/mp4box.all.min.js"></script>
+  <script src="./deps_es5/url-join.js"></script>
+
+  <!-- <script type="module" src="decoder.js" defer> </script> -->
+  <!-- <script type="module" src="./filesystem/dexie.js"></script> -->
+  <!-- <script type='module' src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js' defer></script> -->
+  <script type='module' src='./test.js'></script>
+<!-- <script type='module' src='./playground.js'></script> -->
+  <link rel='stylesheet' href='./main.css'>
+</head>
+</head>
+
+<body>
+  <div id="controls-info">move: <b>wasd</b> | up/down: <b>r</b>/<b>f</b> | roll: <b>q</b>/<b>e</b> | pitch: <b>arrow_up</b>/<b>arrow_down</b> | yaw: <b>arrow_left</b>/<b>arrow_ right</b>
+    <br>
+    Alternatively, camera rotation can be controlled via <b>dragged mouse moves</b> (= hold left mouse button down and move the mouse)
+	</div>
+  <div id="legend">
+    <div class="sample-text">
+      <p>Hover to open legend</p>
+    </div>
+    <div class="legend-item">
+      <div class="color-div" id="cached"></div>
+      <div class="legend-text"><p>In Cache</p></div>
+    </div>
+    <div class="legend-item">
+      <div class="color-div" id="high-quality-buffer"></div>
+      <div class="legend-text"><p>High Quality In Buffer</p></div>
+    </div>
+    <div class="legend-item">
+      <div class="color-div" id="medium-quality-buffer"></div>
+      <div class="legend-text"><p>Medium Quality In Buffer</p></div>
+    </div>
+    <div class="legend-item">
+      <div class="color-div" id="low-quality-buffer"></div>
+      <div class="legend-text"><p>Low Quality In Buffer</p></div>
+    </div>
+    <div class="legend-item">
+      <div class="color-div" id="no-info"></div>
+      <div class="legend-text"><p>Default</p></div>
+    </div>
+    <div class="legend-item">
+      <div class="color-div" id="closest-perspective"></div>
+      <div class="legend-text"><p>Closest Camera Standpoint</p></div>
+    </div>
+    <div class="legend-item">
+      <div class="color-div" id="center-point"></div>
+      <div class="legend-text"><p>Center Point From Camera</p></div>
+    </div>
+    
+  </div>
+  <form id="selection">
+    <label for="datasets">Choose a dataset:</label>
+    <select id="datasets" name="cars">
+      <option value="debug2D">debug2D</option>
+      <option value="tang1s">tang1s</option>
+      <option value="tang">tang</option>
+      <option value="vuur">vuur</option>
+      <option value="multimeter">multimeter</option>
+    </select>
+  </form>
+  <button id="debugtoggle">Set true</button>
+  <div id="threejs">
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+canvas {
+    display: block;
+    background-color: #fff;
+    
+}
+
+#controls-info {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/*pointer-events: none;*/
+	z-index: 1; /* TODO Solve this in HTML */
+}
+
+b {
+    color: orange
+}
+
+ #selection{
+    z-index: 11000;
+    position: absolute; 
+    bottom: 20px; 
+    padding: 12px 6px; 
+    left: calc(50% - 260px); 
+    width: 200px;
+ }
+
+ #debugtoggle{
+    z-index: 11000;
+    position: absolute; 
+    bottom: 20px; 
+    padding: 12px 6px; 
+    left: calc(50% + 60px); 
+    width: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    font: 13px sans-serif; 
+    text-align: center;
+    cursor: pointer;
+
+    
+ }
+
+#legend{
+    z-index: 11000;
+    position: absolute; 
+    bottom: 20px; 
+    padding: 12px 6px; 
+    left: calc(50% - 500px); 
+    width: 200px;
+    
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.2); 
+    color: black; 
+    font: 13px sans-serif; 
+    text-align: center;
+
+    display: grid;
+    grid-template-rows: repeat(8, 25px);
+    grid-gap: 5px;
+
+    max-height: 2%;
+    overflow: hidden;
+
+    height: 250px;
+}
+
+
+
+.legend-item{
+    display: grid;
+    grid-template-columns: 25px auto;
+    grid-gap: 5px;
+
+    visibility: hidden;
+}
+
+.color-div{
+    
+    border-radius: 50%;
+}
+
+#cached{
+    background-color: #800080;
+}
+
+#high-quality-buffer{
+    background-color: #00ff00;
+}
+
+#medium-quality-buffer{
+    background-color: #ff7700;
+}
+
+#low-quality-buffer{
+    background-color: #ff0000;
+}
+
+#no-info {
+    background-color: #808080
+}
+
+#closest-perspective {
+    background-color: #116CAB
+}
+
+#center-point {
+    background-color: #ffff00;
+}
+
+.legend-text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ #legend:hover {
+    max-height: 100%;
+ }
+
+ #legend:hover > .legend-item{
+    visibility: visible;
+ }
+
+ #legend:hover > .sample-text{
+    visibility: hidden;
+ }
+
+ .sample-text{
+    visibility: visible;
+ }
+
+ div {
+     margin: 0;
+     padding: 0;
+ }
+
+
