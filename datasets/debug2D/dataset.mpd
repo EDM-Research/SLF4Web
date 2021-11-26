@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!-- MPD file Generated with GPAC version 0.7.2-DEV-rev619-g269e43b6-master  at 2018-07-31T12:28:29.960Z-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" minBufferTime="PT1.500S" type="static" mediaPresentationDuration="PT0H1M0.000S" maxSegmentDuration="PT0H0M1.000S" profiles="urn:mpeg:dash:profile:full:2011">
+ <ProgramInformation moreInformationURL="http://gpac.io">
+  <Title>vuureekhoorn-ring</Title>
+ </ProgramInformation>
+
+ <Period duration="PT0H1M0.000S">
+  <AdaptationSet segmentAlignment="true" maxWidth="1920" maxHeight="1080" maxFrameRate="30" par="16:9" lang="und">
+   <SegmentTemplate media="$RepresentationID$_$Bandwidth$/segment_$Number$.m4s" timescale="30000" startNumber="1" duration="30000" initialization="$RepresentationID$_$Bandwidth$/segment_.mp4"/>
+   <Representation id="1" mimeType="video/mp4" codecs="avc1.640029" width="1920" height="1080" frameRate="30" sar="1:1" startWithSAP="1" bandwidth="584774">
+   </Representation>
+   <Representation id="2" mimeType="video/mp4" codecs="avc1.640028" width="1920" height="1080" frameRate="30" sar="1:1" startWithSAP="1" bandwidth="584457">
+   </Representation>
+   <Representation id="3" mimeType="video/mp4" codecs="avc1.64001F" width="1280" height="720" frameRate="30" sar="1:1" startWithSAP="1" bandwidth="429625">
+   </Representation>
+   <Representation id="4" mimeType="video/mp4" codecs="avc1.64001F" width="1280" height="720" frameRate="30" sar="1:1" startWithSAP="1" bandwidth="425238">
+   </Representation>
+   <Representation id="5" mimeType="video/mp4" codecs="avc1.64001F" width="1280" height="720" frameRate="30" sar="1:1" startWithSAP="1" bandwidth="409934">
+   </Representation>
+  </AdaptationSet>
+          <!-- Meta Data -->
+        <AdaptationSet id="md-info" mimeType="text/plain">
+            <SegmentTemplate media="$RepresentationID$" duration="30000" />
+            <Representation id="info.txt" bandwidth="1" />
+        </AdaptationSet>
+        <AdaptationSet id="md-poses" mimeType="text/plain">
+            <SegmentTemplate media="$RepresentationID$" duration="30000" />
+            <Representation id="poses.txt" bandwidth="1" />
+        </AdaptationSet>
+        <AdaptationSet id="md-lfs" mimeType="text/plain">
+            <SegmentTemplate media="$RepresentationID$" duration="30000" />
+            <Representation id="lfs.txt" bandwidth="1" />
+        </AdaptationSet>
+        <AdaptationSet id="md-datapoints" mimeType="text/plain">
+            <SegmentTemplate media="$RepresentationID$" duration="30000" />
+            <Representation id="dataPointsProjected.off" bandwidth="1" />
+        </AdaptationSet>
+        <AdaptationSet id="md-calibration" mimeType="text/xml">
+            <SegmentTemplate media="$RepresentationID$" duration="30000" />
+            <Representation id="calibration.xml" bandwidth="1" />
+        </AdaptationSet>
+ </Period>
+</MPD>
