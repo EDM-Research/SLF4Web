@@ -25,7 +25,7 @@ This repository comes equipped with only a single SLF dataset called `debug2D`. 
 
 ![Example frame from the debug2D dataset](/assets/images/debug2d_frame0001.png "Example frame from the debug2D dataset")
 
-More SLF datasets can be found [TODO](here); simply deploy them alongside `debug2D` in the `datasets` folder. **Never** push datasets to the `SLF4Web` repository to prevent it from excessively growing in size.
+More SLF datasets can be found [here](https://doi.org/10.5281/zenodo.5730526); simply deploy them alongside `debug2D` in the `datasets` folder. **Never** push datasets to the `SLF4Web` repository to prevent it from excessively growing in size.
 
 ## Incorporating one or more SLF objects in a WebGL scene
 
