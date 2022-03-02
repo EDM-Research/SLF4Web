@@ -4,6 +4,8 @@
 
 ![Logo UHasselt-EDM](/assets/images/logo_UHasselt_EDM.png "Logo UHasselt-EDM")
 
+![Logo Flanders Make](/assets/images/logo_FlandersMake.png "Logo Flanders Make")
+
 Static light fields (SLFs) are an image-based technology that allow for the photorealistic representation of inanimate objects and scenes in virtual environments. As such, static light fields have application opportunities in heterogeneous domains, including education, cultural heritage and entertainment. `SLF4Web` is a Web-based implementation of a static light field consumption system; it allows SLF datasets to be adaptively streamed over the network (via MPEG-DASH) and then to be visualized in a vanilla Web browser.
 
 If you publish a scientific paper that is based on (or makes use of) `SLF4Web`, you must cite the following conference publication:
